@@ -4,10 +4,85 @@
 <head>
     <meta charset="utf-8">
     <title>Projektarbeit: To-Do Liste</title>
+    <script src="./app.js" defer></script>
+    <link rel="stylesheet" href="./app.css">
+
 </head>
 
 <body>
+    <h1>To Do List</h1>
+    <h2>Calendar</h2>
 
+    <div class="month">
+        <ul>
+            <li class="prev">&#10094</li>
+            <li class="next">&#10095</li>
+            <li>June<br><span style="font-size:18px">2024</span></li>
+        </ul>
+    </div>
+
+    <div class="weekdays">
+        <li>Sa</li>
+        <li>So</li>
+        <li>Mo</li>
+        <li>Di</li>
+        <li>Mi</li>
+        <li>Do</li>
+        <li>Fr</li>
+    </div>
+
+    <ul class="days">
+        <li><span class="active">1</span></li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+        <li>7</li>
+        <li>8</li>
+        <li>9</li>
+        <li>10</li>
+        <li>11</li>
+        <li>12</li>
+        <li>13</li>
+        <li>14</li>
+        <li>15</li>
+        <li>16</li>
+        <li>17</li>
+        <li>18</li>
+        <li>19</li>
+        <li>20</li>
+        <li>21</li>
+        <li>22</li>
+        <li>23</li>
+        <li>24</li>
+        <li>25</li>
+        <li>26</li>
+        <li>27</li>
+        <li>28</li>
+        <li>29</li>
+        <li>30</li>
+    </ul>
+    <h2>Slide</h2>
+    <div class="slide">
+        <button class="last">Last</button>
+        <img src="./list.jpg" alt="list">
+        <img src="./live.jpg" alt="live">
+        <img src="./dream.jpg" alt="dream">
+        <button class="next">Next</button>
+    </div>
+
+    <h2>Tasks</h2>
+    <div name="aufträge" id="list"></div>
+    <form name="task">
+
+        <label for="title">Titel</label> <br />
+        <input type="text" name="title" id="title"><br />
+        <input type="text" name="id">
+        <button type="submit" name="send">Hinzufügen</button>
+        <button type="button" name="edit">Ändern</button>
+    </form>
 </body>
+
 
 </html>
